@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{fixtures.first.tournament.name}} Scores and Fixtures</h2>
+<form class="d-flex mb-5">
+    <input class="form-control me-2" name="search" type="search" placeholder="Search" id="search-input" hx-get="{% url 'fixture' %}" hx-trigger="keyup delay:500ms" hx-target="#fixture-list" hx-indicator='#spinner'>
+    <button class="btn btn-outline-dark" type="submit">Search</button>
+</form>
+{% if all_completed %}
+<div id="fixturelist-container">
+    {% else %}
+    <div id="fixturelist-container" hx-get="{% url 'fixture' %}" hx-trigger="every 20s" hx-swap="innerHTML" hx-indicator="#spinner" hx-vals="js:{search: document.getElementById('search-input').value}">
+        {% endif %}
+        {% include 'partials/fixturelist.html' %}
+    </div>
+
+    <div id="spinner" class="htmx-indicator indicator-style">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    {% endblock content %}
