@@ -1,7 +1,7 @@
 <div id="top"></div>
 
-[![Django][django-sheild](https://www.djangoproject.com/)
-[![django-htmx][django-htmx]](https://github.com/adamchainz/django-htmx)
+[![Django][django-sheild][django-url]
+[![django-htmx][django-htmx]][django-htmx-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -53,5 +53,7 @@ Getting started with this project is really simple because this is a mini projec
    ```
 
 [django-sheild]: https://img.shields.io/badge/-django-black.svg?style=for-the-badge&logo=django&colorB=555
+[django-url]: https://www.djangoproject.com/
 [django-htmx]: https://img.shields.io/badge/htmx--black.svg?style=for-the-badge&logo=django&colorB=555
+[django-htmx-url]: https://github.com/adamchainz/django-htmx
 [product-screenshot]: images/dashboard.png
