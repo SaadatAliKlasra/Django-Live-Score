@@ -1,7 +1,7 @@
 <div id="top"></div>
 
-[![Django][django-sheild]]
-[![django-htmx][django-htmx]]
+[![Django][django-sheild](https://www.djangoproject.com/)
+[![django-htmx][django-htmx]](https://github.com/adamchainz/django-htmx)
 
 <!-- PROJECT LOGO -->
 <br />
