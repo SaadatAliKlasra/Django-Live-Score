@@ -1,6 +1,7 @@
 <div id="top"></div>
 
-[![Django][django-sheild]] [![django-htmx][django-htmx]]
+[![Django][django-sheild]]
+[![django-htmx][django-htmx]]
 
 <!-- PROJECT LOGO -->
 <br />
